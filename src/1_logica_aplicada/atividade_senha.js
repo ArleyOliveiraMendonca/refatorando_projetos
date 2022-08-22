@@ -6,12 +6,23 @@
 
 // siga boilerplate (modelo) para realizar o exercicio
 // a funçao validaSenha irá receber um argumento (senha)
+//var readlineSync = require('readline-sync');
+
 const permitido = "ACESSO PERMITIDO";
 const negado = "ACESSO NEGADO";
 
 function validaSenha(senha) {  
 //retorne aqui a sua solucao
-
+    if (senha =="1234")
+    {
+        console.log(permitido)
+        return permitido
+    }
+    else
+    {
+        console.log(negado)
+        return negado
+    }
+    
 }
-
 module.exports = validaSenha;
